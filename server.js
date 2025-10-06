@@ -17,6 +17,9 @@ app.use(express.urlencoded({ extended: true }));
 const allowedOrigins = [
   "http://localhost:5173",             // local frontend (Vite default port)
   "http://localhost:3000",             // React (CRA) default port
+    "https://frontend-deploy-smoky.vercel.app",
+  "https://frontend-deploy-git-main-snehal-s-projects-675d4a99.vercel.app",
+  "https://frontend-deploy-dyczw8k2g-snehal-s-projects-675d4a99.vercel.app",
   process.env.ALLOWED_ORIGIN,          // your deployed frontend (from .env)
 ];
 console.log("Loaded MONGO_URI:", process.env.MONGO_URI);
